@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="kk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090308"><title>Жаным 🤍</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#090308;color:#fffafd;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Arial,sans-serif}
+body{overflow-x:hidden}.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 15%,#ff367c40,transparent 30%),radial-gradient(circle at 85% 65%,#ff6ca330,transparent 34%),linear-gradient(145deg,#050205,#180710 52%,#070206)}
+.stars,.hearts{position:fixed;inset:0;pointer-events:none;z-index:-1}.star{position:absolute;width:3px;height:3px;border-radius:50%;background:white;animation:blink 2.5s infinite}.float{position:absolute;opacity:.22;font-size:24px;animation:rise linear infinite}@keyframes blink{50%{opacity:.1}}@keyframes rise{from{transform:translateY(110vh)}to{transform:translateY(-20vh) rotate(25deg)}}
+.progress{position:fixed;top:12px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:50}.dot{width:6px;height:6px;border-radius:9px;background:#ffffff40}.dot.on{width:22px;background:#ff75a5;box-shadow:0 0 13px #ff4e8d}
+.screen{display:none;min-height:100svh;padding:48px 16px 34px;align-items:center;justify-content:center}.screen.active{display:flex;animation:appear .65s ease}@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.card{width:min(650px,100%);padding:28px 18px;border:1px solid #ffb4d036;border-radius:32px;background:#ffffff0e;backdrop-filter:blur(18px);box-shadow:0 24px 90px #ff236d2b,inset 0 1px #ffffff20;text-align:center}
+.kicker{font-size:12px;letter-spacing:2px;color:#ffc3d6;margin-bottom:10px}h1,h2{font-family:"Snell Roundhand","Apple Chancery","Brush Script MT",cursive;color:#ffdbe7;text-shadow:0 0 22px #ff4c87a6;font-weight:600}h1{font-size:clamp(50px,14vw,88px);margin:0 0 12px}h2{font-size:38px;margin:0 0 18px}
+p{font-size:17px;line-height:1.8;margin:10px 0;color:#fff8fb}.lead{font-size:19px;color:#ffe0ea}.emoji{font-size:70px;line-height:1;margin:7px 0 17px}.quote{font-family:"Snell Roundhand","Apple Chancery",cursive;font-size:29px;color:#ffc7d9;line-height:1.45}
+.btn{border:0;border-radius:18px;padding:15px 23px;margin-top:20px;font-size:16px;font-weight:700;color:white;background:linear-gradient(135deg,#ff5b92,#d91e68);box-shadow:0 11px 32px #ff377855;cursor:pointer}.btn:active{transform:scale(.98)}.btn.secondary{background:#ffffff12;border:1px solid #ffb4d044;box-shadow:none}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#ff9fbd,transparent);margin:24px 0}.list{display:grid;gap:10px;margin-top:18px}.item{display:flex;gap:12px;text-align:left;padding:14px;border-radius:19px;background:#ffffff10;border:1px solid #ffb4d022}.item .e{font-size:22px;min-width:29px}.item span{line-height:1.6;font-size:15px}
+.memory{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0}.photo{aspect-ratio:1;border-radius:19px;overflow:hidden;background:linear-gradient(145deg,#35111f,#12060d);border:1px solid #ffb4d033;display:flex;align-items:center;justify-content:center}.photo img{width:100%;height:100%;object-fit:cover}.photo span{font-size:13px;color:#ffd3e0;padding:12px}.bigheart{font-size:105px;animation:pulse 1.8s infinite;filter:drop-shadow(0 0 25px #ff4f8b)}@keyframes pulse{50%{transform:scale(1.07)}}.signature{font-family:"Snell Roundhand","Apple Chancery",cursive;font-size:31px;color:#ffc8d9;margin-top:18px}
+@media(max-width:430px){.card{padding:26px 16px}p{font-size:16px}.memory{gap:8px}}
+</style></head><body><div id="app"><div class="bg"></div><div class="stars" id="stars"></div><div class="hearts" id="hearts"></div><div class="progress" id="progress"></div>
+
+<section class="screen active"><div class="card"><div class="emoji">❤️</div><div class="kicker">Саған ғана арналған</div><h1>Жаным...</h1><p class="lead">Мен бұл жолдарды саған асықпай, жүрегіммен жаздым. 🥹🤍</p><p>Мен сені ренжітіп алғанымды білемін. Сол үшін жай ғана кешірші деп қойғым келмеді. Саған ішімде жүргеннің бәрін айтқым келді. 🫠❤️</p><button class="btn" onclick="next()">Жалғастыршы 🫶🏻</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">🥹</div><div class="kicker">Бір сәтке</div><h2>Маған аздап уақыт берші</h2><p>Мен осы сайтты жасап отырып, сенімен бірге өткізген сәттердің бәрін есіме түсірдім. Қанша күлгенімізді, қанша сөйлескенімізді, бір бірімізге ренжіп қайта татуласқан кездерімізді ойладым. 🥰</p><p>Солардың бәрінен бір нәрсені түсіндім. Сен менің өмірімде жай ғана адам емессің. Сенің мен үшін орның бөлек. ❤️</p><button class="btn" onclick="next()">Әрі қарай 🤍</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">😔❤️</div><div class="kicker">Шын жүрегімнен</div><h2>Мен сені ренжіттім</h2><p>Мен өзімді ақтап алғым келмейді. Қателескенімді түсінемін. Сенің көңіліңе тигенім үшін қатты өкінемін. 🥹</p><p>Саған ауыр болған нәрсені мен де жеңіл нәрсе сияқты көргім келмейді. Сенің сезімің мен үшін маңызды. Сенің ренжігенің де маңызды.</p><p>Егер сол сәтте сені түсінбей қалған болсам, кешірші мені. 🤍</p><button class="btn" onclick="next()">Саған бір нәрсе айтқым келеді 🫶🏻</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">🫶🏻</div><div class="kicker">Сенің орның</div><h2>Сен мен үшін қандайсың</h2><p>Сенің даусыңды естудің өзі кейде көңілімді көтереді. Сенің күліп отырғаныңды көргенде мен де еріксіз күлемін. 🥰</p><p>Сенің кішкентай нәрселерге қуанып қалғаның, маған еркелегенің, мені іздегенің, өзіңнің ерекше мінезің бәрі маған қымбат. 🤭❤️</p><p>Сондықтан сенің көңіліңді қалдырғаным өзіме де ауыр тиіп тұр. 🫠</p><button class="btn" onclick="next()">Естеліктерімізге өтейік 📸</button></div></section>
+
+<section class="screen"><div class="card"><div class="kicker">Бірінші естеліктер</div><h2>Біздің сәттеріміз 🥹❤️</h2><p>Осы жерге өздеріңнің ең алғашқы, ең қымбат фотоларыңды сал. Әр сурет жеке бір естелік болып тұрады. 📸🫶🏻</p><div class="memory" id="m1"></div><button class="btn" onclick="next()">Тағы да естеліктер 🤍</button></div></section>
+
+<section class="screen"><div class="card"><div class="kicker">Бақытты сәттер</div><h2>Сенің күлкің 😍</h2><p>Мен үшін ең қымбат фотолардың бірі сен күліп тұрған кездерің. Өйткені сен бақытты болсаң, менің де көңілім тыныш болады. 🥰❤️</p><div class="memory" id="m2"></div><button class="btn" onclick="next()">Келесі естелік 🥹</button></div></section>
+
+<section class="screen"><div class="card"><div class="kicker">Тек екеуміз</div><h2>Біз туралы 🤍</h2><p class="quote">Екеуміздің тарихымызда тек жақсы күндер ғана емес, қиын сәттер де бар. Бірақ мен сол қиындықтардың арасынан да сенімен бірге қалғым келетінімді түсіндім. ❤️</p><div class="divider"></div><p>Мен біздің бірге түскен суреттерімізге қарап отырып, қанша сәттің босқа өтпегенін сезіндім. Әрқайсысы мен үшін бөлек естелік. 🫶🏻</p><div class="memory" id="m3"></div><button class="btn" onclick="next()">Саған уәдем бар 🫰🏻</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">🫰🏻❤️</div><div class="kicker">Сөзбен емес</div><h2>Саған уәде беремін</h2><div class="list">
+<div class="item"><div class="e">🤍</div><span>Сен сөйлегенде сені соңына дейін тыңдауға тырысамын.</span></div>
+<div class="item"><div class="e">🥹</div><span>Сенің сезіміңді кішкентай нәрсе деп қабылдамаймын.</span></div>
+<div class="item"><div class="e">🫶🏻</div><span>Саған көңіл бөлу мен үшін міндет емес, өзімнің қалауым екенін әрқашан есімде ұстаймын.</span></div>
+<div class="item"><div class="e">❤️</div><span>Қателессем, оны мойындаудан қашпаймын.</span></div>
+<div class="item"><div class="e">🫠</div><span>Сені ренжіткен нәрседен сабақ алып, келесіде сол қателікті қайталамауға тырысамын.</span></div>
+<div class="item"><div class="e">😘</div><span>Сенің жаның тыныш болғанын және өзіңді қасымда жақсы сезінгеніңді қалаймын.</span></div>
+</div><button class="btn" onclick="next()">Тағы бір нәрсе бар 💋</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">💋🥰</div><div class="kicker">Менің саған айтарым</div><h2>Сені жақсы көремін</h2><p>Мен саған тек бәрі жақсы болған кезде ғана керек болатын адам болғым келмейді. Қиын кезде де қасыңнан табылып, сені түсінуге тырысатын адам болғым келеді. 🫶🏻</p><p>Менің саған деген сезімім бір ренішпен жоғалып кетпейді. Осындай сәттерде сені қаншалықты бағалайтынымды түсіне түсемін. ❤️</p><p>Сенің маған қайта күліп қарағаныңды қатты қалаймын. 🥹🤍</p><button class="btn" onclick="next()">Соңғы естеліктер 📸</button></div></section>
+
+<section class="screen"><div class="card"><div class="kicker">Тағы бірнеше сурет</div><h2>Біздің кішкентай әлеміміз 🥰</h2><p>Мұнда бірге түскен тағы да көп суреттеріңді салуға болады. Қанша көп болса, сонша әдемі болады. ❤️📸</p><div class="memory" id="m4"></div><button class="btn" onclick="next()">Соңғы бетке 🥹</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">🥹🤍</div><div class="kicker">Соңғы сөзім</div><h2>Мені кешірші, жаным</h2><p>Мен сенен бәрін бірден ұмытып кетуіңді сұрамаймын. Егер көңілің қалған болса, оны түсінемін. Егер саған уақыт керек болса, оған да түсіністікпен қараймын.</p><p>Мен тек өз қателігімді түсінгенімді және сені ренжіткеніме шын өкінетінімді білсең екен деймін. ❤️</p><p>Сенің орның мен үшін өте бөлек. Мен сені жоғалтқым келмейді. Сенімен бірге әлі талай әдемі күндерді өткізгім келеді. 🫶🏻🥰</p><p class="quote">Мен сені қатты жақсы көремін. 🥹❤️🫶🏻</p><button class="btn" onclick="forgive()">❤️ Кешірдім</button><button class="btn secondary" onclick="wait()">🥹 Әлі ойланып жүрмін</button><div id="answer"></div></div></section>
+
+<section class="screen"><div class="card"><div class="bigheart" id="fh">❤️</div><h2>Рақмет, жаным 🥹</h2><p>Егер мені кешірсең, бұл мен үшін жай ғана сөз емес. Сенің маған берген мүмкіндігіңді бағалаймын. 🤍</p><p>Мен сені ренжіткен кезімнен емес, сені қайта күлдірген кездерімнен көбірек есте қалғым келеді. 🥰🫶🏻</p><p class="signature">Сен менің жүрегімсің. ❤️</p><div style="font-size:30px">🥹☺️😊🫰🏻🫠❤️🫶🏻💋🤭😍😘🤍</div><button class="btn" onclick="next()">Тағы бір соңғы бет 🤍</button></div></section>
+
+<section class="screen"><div class="card"><div class="emoji">💌❤️‍🔥</div><div class="kicker">Жүрегімнен шыққан сөздер</div><h2>Соңғы хатым, жаным 💋</h2>
+<p class="lead">Жаным менің, сен менің өміріме келген ең әдемі кездейсоқтық емес, жүрегім күн сайын қайта-қайта таңдайтын адамсың. 🥹❤️🫶🏻</p>
+<p>Сені ойласам, жүзіме еріксіз күлкі үйіріледі, ал сенің даусыңды естісем, ішімдегі бар уайым бір сәтке ұмытылғандай болады. 🫠🥰😘</p>
+<p>Сенің көзіңе қарап ұзақ отырғым келеді, қолыңды ұстап, саусақтарыңды сипап, маңдайыңнан ақырын сүйіп, әлемдегі ең қымбат жан екеніңді сездіргім келеді. 🥹💋❤️</p>
+<p>Қасыңда болғанда уақыт тоқтап қалса екен деймін, өйткені сенің жаныңда қарапайым сәттердің өзі мен үшін ең әдемі естелікке айналады. 🤍🫶🏻😍</p>
+<p>Сені тек әдемі сөздермен ғана емес, күн сайынғы қамқорлығыммен, адалдығыммен, құшағыммен және саған деген шынайы ықыласыммен жақсы көргім келеді. ❤️‍🔥😘</p>
+<p>Сенің еркелігің де, күлкің де, кейде үндемей қалатының да, маған жақындап келгенің де жүрегіме сондай ыстық. Мен сенің әрбір кішкентай қылығыңды сүйкімді көріп, тағы да ғашық бола беремін. 🫠🤭🥰</p>
+<p>Егер дәл қазір қасымда болсаң, сені қатты құшақтап, жібергім келмей тұрар едім, бетіңнен қайта-қайта сүйіп, құлағыңа «жаным, сен мен үшін бәрінен қымбатсың» деп сыбырлар едім. 🫂💋💋❤️</p>
+<p>Мен сенімен бірге таң атқанын қарсы алғым келеді, кешкі аспанды бірге тамашалағым келеді, болмашы нәрсеге бірге күліп, бір-бірімізге еркелеп, талай әдемі күнді бірге өткізгім келеді. 🌙✨🫶🏻</p>
+<p>Сен менің жүрегімдегі ерекше сезімсің, ойымдағы ең тәтті армансың, құшағыма басқым келетін ең жақын жансың. Қанша рет айтсам да, «сені жақсы көремін» деген сөз менің саған деген сезімімнің бәрін толық жеткізе алмайды. 🥹❤️‍🔥💗</p>
+<p>Есіңде болсыншы, жаным: сен сүйікті болуға, аялануға, құрметке және шынайы махаббатқа лайықсың. Мен саған осының бәрін сөзбен ғана емес, ісіммен де сезіндіруге тырысамын. 🤍🥰🫶🏻</p>
+<p class="quote">Менің ең тәтті бақытым — сенсің. Сені бүгін де, ертең де, әр күнімде қайта-қайта таңдаймын. 💋❤️‍🔥🥹</p>
+<div class="emoji">🥹🫠🫶🏻❤️🥰☺️😘💋</div><div class="signature">Бар жүрегіммен, сенің адамың. 💌❤️</div></div></section>
+</div>
+<script>
+const ss=[...document.querySelectorAll(".screen")],pr=document.getElementById("progress");let page=0;
+ss.forEach((_,i)=>{let d=document.createElement("div");d.className="dot"+(i?"":" on");pr.appendChild(d)});
+function show(){ss.forEach((s,i)=>s.classList.toggle("active",i===page));[...pr.children].forEach((d,i)=>d.classList.toggle("on",i===page));scrollTo({top:0,behavior:"smooth"})}
+function next(){if(page<ss.length-1){page++;show()}}
+function forgive(){document.getElementById("answer").innerHTML="<p class='lead'>🥹❤️ Рақмет саған, жаным. Мен бұл мүмкіндікті бағалаймын. Сені қайта ренжітпеуге барымды саламын. 🫶🏻🤍</p>";document.getElementById("fh").textContent="💖"}
+function wait(){document.getElementById("answer").innerHTML="<p>Асықпай ойланшы. Мен сені ешқайда асықтырмаймын. Сенің көңілің мен сезімің мен үшін маңызды. 🥹🤍</p>"}
+function slots(id,n,start){let b=document.getElementById(id);for(let i=0;i<n;i++){let d=document.createElement("div");d.className="photo";d.innerHTML="<span>"+(start+i+1)+" сурет 📸<br>Осы жерге естелігіңді қой</span>";b.appendChild(d)}}
+slots("m1",6,0);slots("m2",6,6);slots("m3",6,12);slots("m4",8,18);
+const stars=document.getElementById("stars"),hearts=document.getElementById("hearts");
+for(let i=0;i<60;i++){let s=document.createElement("i");s.className="star";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDelay=Math.random()*3+"s";stars.appendChild(s)}
+const es=["❤️","🤍","🫶🏻","💗","💖","💕","🥹","🫠","😘","😍"];
+for(let i=0;i<32;i++){let x=document.createElement("span");x.className="float";x.textContent=es[i%es.length];x.style.left=Math.random()*100+"%";x.style.animationDuration=10+Math.random()*14+"s";x.style.animationDelay=-Math.random()*18+"s";hearts.appendChild(x)}
+</script></body></html>
